@@ -1,0 +1,134 @@
+/* 1.global style  */
+/* 2.common style */
+/* general style.............................................................................. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* small screen */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #777 !important;
+} */
+html{
+    scroll-behavior: smooth;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+.carousel-inner h1{
+    text-shadow: 1px 1px #333 !important;
+}
+.carousel-inner .carousel-caption{
+    background: rgba(200, 200, 200, 0.3) !important;
+    border-radius: 7px;
+}
+.card-body h2{
+    font-size: 40px !important;
+}
+code{
+    font-size: 18px !important;
+}
+.myicon{
+    height:30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 17px;
+}
+.fixedimg{
+background-attachment: fixed;
+background-size: cover;
+height: 250px;
+}
+.fixedimg1{
+background-image: url(../images/cover3.jpg);
+}
+.fixedimg2{
+background-image: url(../images/cover29.jpg);
+}
+.btnbefo{
+    position: relative;
+    left: 30px;
+}
+.btnbefo::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent rgb(41, 42, 42) transparent;
+top: 20px;
+left: 13px;
+display: none;
+}
+.btnbefo::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 80px;
+background-color: rgb(41, 42, 42);
+top: 40px;
+left: -15px;
+border-radius: 5px;
+display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+
+}
+.btnbefo:hover::after{
+    content: "do not hesitate";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "done";
+    display: block;
+    height: 25px;
+}
+.navbar-brand{
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px white,
+                -10px -10px 20px white;
+}
+.dropdown-menu li a{
+    text-shadow: 1px 1px 0px black;
+}
+.baner-tit-par{
+    position: relative;
+}
+.banner-tit {
+    background: url(../images/bgtit.png) no-repeat center top;
+    height: 50px;
+    position:absolute;
+    content: "";
+    left: 0;
+    right: 0;
+}
+.ser-div{
+    box-shadow: 0 0 30px 10px gray inset;
+}
+i{
+    font-size: 30px;
+}
+.foot-div a{
+color: #333;
+}
